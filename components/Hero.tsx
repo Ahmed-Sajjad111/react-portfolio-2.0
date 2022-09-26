@@ -33,6 +33,7 @@ const Hero = (props: Props) => {
             <img
                 className='relative rounded-full h-32 w-32 mx-auto object-cover'
                 src='https://cdn.sanity.io/images/zp7mbokg/production/G3i4emG6B8JnTmGoN0UjgAp8-300x450.jpg'
+                alt='cover image'
             />
             <div className='z-20'>
                 <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[15px]'>

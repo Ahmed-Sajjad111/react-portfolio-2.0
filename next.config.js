@@ -2,6 +2,12 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  images: {
+    domains: [
+      'imgur.com',
+      'www.google.com',
+    ]
+  }
 }
 
 module.exports = nextConfig

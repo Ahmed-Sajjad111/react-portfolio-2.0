@@ -40,7 +40,7 @@ const ExperienceCard = (props: Props) => {
             </div>
             <p className='uppercase py-5 text-gray-300'>Started Work... - Ended...</p>
             {/* w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory */}
-            <ul className='list-disc space-y-4 ml-5 text-lg flex flex-col h-[300px] overflow-y-auto snap-y snap-mandatory'>
+            <ul className='list-disc space-y-4 ml-5 text-lg flex flex-col h-[300px] overflow-y-auto snap-y snap-mandatory scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#66cd00]/80'>
                 <li className='snap-center'>Summary Points Summary Points Summary Points</li>
                 <li className='snap-center'>Summary Points Summary Points Summary Points</li>
                 <li className='snap-center'>Summary Points Summary Points Summary Points</li>

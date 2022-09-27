@@ -43,7 +43,7 @@ const Hero = (props: Props) => {
                     <span className='mr-3'>{text}</span>
                     <Cursor cursorColor="#66cd00" />
                 </h1>
-                
+
                 <div className='pt-5'>
                     <Link href='#about'>
                         <button className='heroButton'>About</button>
@@ -58,6 +58,14 @@ const Hero = (props: Props) => {
                         <button className='heroButton'>Projects</button>
                     </Link>
                 </div>
+                <a
+                    target="_blank"
+                    href='https://drive.google.com/file/d/17LixP_RQfmOQBJG82e4PokWgprK_2Ul6/view?usp=sharing'>
+                    <button
+                        className='heroButton mt-3 items-center justify-center text-center'>
+                        Resume
+                    </button>
+                </a>
             </div>
         </div>
     )

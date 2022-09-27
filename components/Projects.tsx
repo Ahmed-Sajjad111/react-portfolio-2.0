@@ -16,15 +16,16 @@ const Projects = (props: Props) => {
                 Projects
             </h3>
 
-            <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20'>
+            <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#66cd00]/80'>
                 {projects.map((project, i) => (
                     <div
+                        key= {i}
                         className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen'>
                         <motion.img
                             initial={{ opacity: 0, y: -300 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1.2 }}
-                            viewport={{ once: true}}
+                            viewport={{ once: true }}
                             src="https://cdn.sanity.io/images/zp7mbokg/production/G3i4emG6B8JnTmGoN0UjgAp8-300x450.jpg"
                             alt="project image"
                         />

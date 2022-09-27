@@ -1,10 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import EducationCard from './EducationCard';
+import { Education } from '../typings';
 
-type Props = {}
+type Props = {
+    educations: Education[];
+}
 
-const WorkExperience = (props: Props) => {
+const WorkExperience = ({ educations }: Props) => {
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -17,9 +20,11 @@ const WorkExperience = (props: Props) => {
             </h3>
 
             <div className='w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#66cd00]/80'>
-                <EducationCard />
-                <EducationCard />
-                <EducationCard />
+                {educations?.map((education) => (
+                    <EducationCard
+                        key={education._id}
+                        education={education} />
+                ))}
             </div>
         </motion.div>
     )

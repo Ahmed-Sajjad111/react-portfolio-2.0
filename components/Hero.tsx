@@ -4,13 +4,17 @@ import BackgroundCircles from './BackgroundCircles';
 import Image from 'next/image'
 import myImg from '../utils/profileImg.png'
 import Link from 'next/link';
+import { PageInfo } from '../typings';
+import { urlFor } from '../sanity';
 
-type Props = {}
+type Props = {
+    pageInfo: PageInfo;
+}
 
-const Hero = (props: Props) => {
+const Hero = ({ pageInfo }: Props) => {
     const [text, count] = useTypewriter({
         words: [
-            "Hi, I'm Ahmed Sajjad",
+            `Hi, I'm ${pageInfo?.name}`,
             "<Tech Enthusiast />",
             "<Gamer />",
             "<Dog Dad />",
@@ -21,23 +25,23 @@ const Hero = (props: Props) => {
     return (
         <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
             <BackgroundCircles />
-            {/* <div className='relative rounded-full h-32 w-32 mx-auto object-cover'>
+            <div className='relative rounded-full h-32 w-32 mx-auto object-cover'>
                 <Image
                     priority
-                    src={myImg}
+                    src={urlFor(pageInfo?.heroImage).url()}
                     style={{ position: 'relative', borderRadius: '99999px', objectFit: 'cover' }}
                     layout='fill'
                     objectFit='contain'
                 />
-            </div> */}
-            <img
+            </div>
+            {/* <img
                 className='relative rounded-full h-32 w-32 mx-auto object-cover'
-                src='https://cdn.sanity.io/images/zp7mbokg/production/G3i4emG6B8JnTmGoN0UjgAp8-300x450.jpg'
+                src={urlFor(pageInfo?.heroImage).url()}
                 alt='cover image'
-            />
+            /> */}
             <div className='z-20'>
                 <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[15px]'>
-                    ~ Developer ~
+                    {pageInfo.role}
                 </h2>
                 <h1 className='text-5xl lg:6xl font-semibold px-10'>
                     <span className='mr-3'>{text}</span>

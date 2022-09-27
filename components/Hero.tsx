@@ -2,7 +2,6 @@ import React from 'react'
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
 import BackgroundCircles from './BackgroundCircles';
 import Image from 'next/image'
-import myImg from '../utils/profileImg.png'
 import Link from 'next/link';
 import { PageInfo } from '../typings';
 import { urlFor } from '../sanity';
@@ -55,13 +54,16 @@ const Hero = ({ pageInfo }: Props) => {
                     <Link href='#experience'>
                         <button className='heroButton'>Experience</button>
                     </Link>
-                    <Link href='#skills'>
-                        <button className='heroButton'>Skills</button>
-                    </Link>
-                    <Link href='#projects'>
-                        <button className='heroButton'>Projects</button>
+                    <Link href='#education'>
+                        <button className='heroButton'>Education</button>
                     </Link>
                 </div>
+                <Link href='#skills'>
+                    <button className='heroButton'>Skills</button>
+                </Link>
+                <Link href='#projects'>
+                    <button className='heroButton'>Projects</button>
+                </Link>
                 <a
                     target="_blank"
                     href='https://drive.google.com/file/d/17LixP_RQfmOQBJG82e4PokWgprK_2Ul6/view?usp=sharing'>

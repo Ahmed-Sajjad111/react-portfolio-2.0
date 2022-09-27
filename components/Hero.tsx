@@ -66,6 +66,7 @@ const Hero = ({ pageInfo }: Props) => {
                 </Link>
                 <a
                     target="_blank"
+                    rel="noreferrer"
                     href='https://drive.google.com/file/d/17LixP_RQfmOQBJG82e4PokWgprK_2Ul6/view?usp=sharing'>
                     <button
                         className='heroButton mt-3 items-center justify-center text-center'>

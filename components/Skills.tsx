@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import SingleSkill from './singleSkill'
+import SingleSkill from './SingleSkill'
 import { Skill as SkillType } from '../typings';
 
 type Props = {

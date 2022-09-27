@@ -7,7 +7,7 @@ type Props = {
     education: Education;
 }
 
-const ExperienceCard = ({ education }: Props) => {
+const EducationCard = ({ education }: Props) => {
     return (<article className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-10 opacity-40 hover:opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden'>
         <motion.img
             initial={{
@@ -37,4 +37,4 @@ const ExperienceCard = ({ education }: Props) => {
     )
 }
 
-export default ExperienceCard
+export default EducationCard

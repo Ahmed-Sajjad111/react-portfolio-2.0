@@ -7,7 +7,7 @@ type Props = {
     educations: Education[];
 }
 
-const WorkExperience = ({ educations }: Props) => {
+const Educations = ({ educations }: Props) => {
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -30,4 +30,4 @@ const WorkExperience = ({ educations }: Props) => {
     )
 }
 
-export default WorkExperience
+export default Educations

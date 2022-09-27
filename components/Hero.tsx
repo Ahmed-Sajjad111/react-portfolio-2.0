@@ -58,6 +58,7 @@ const Hero = ({ pageInfo }: Props) => {
                         <button className='heroButton'>Education</button>
                     </Link>
                 </div>
+                
                 <Link href='#skills'>
                     <button className='heroButton'>Skills</button>
                 </Link>

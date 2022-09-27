@@ -8,6 +8,7 @@ type Props = {
 }
 
 const About = ({ pageInfo }: Props) => {
+    
     return (
         <motion.div
             initial={{ opacity: 0 }}

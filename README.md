@@ -61,7 +61,7 @@ helped local business owners track their sales, inventory, and attendance. With 
 ---
 
 ## My Other Pages 🌍
-[LinkedIn](https://www.linkedin.com/in/ahmed-sajjad-3344b8217/) || [Portfolio](https://ahmed-sajjad111.github.io/react-portfolio/) || [Email](mailto:uasajjad11198@outlook.com)
+[LinkedIn](https://www.linkedin.com/in/ahmed-sajjad-3344b8217/) || [Portfolio](https://react-portfolio-2-0-fko8-7vl1clm5d-ahmed-sajjad111.vercel.app/) || [Email](mailto:uasajjad11198@outlook.com)
 
 ---
 

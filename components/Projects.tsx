@@ -29,8 +29,11 @@ const Projects = ({ projects }: Props) => {
             <h3 className='md:absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl mt-20 md:mt-0'>
                 Projects
             </h3>
+            <h3 className='absolute top-36 uppercase tracking-[3px] text-gray-500 text-sm'>
+                Scroll Right to See More
+            </h3>
 
-            <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#66cd00]/80'>
+            <div className='md:relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#66cd00]/80'>
                 {projects?.map((project, i) => (
                     <div
                         key={project._id}
@@ -85,7 +88,7 @@ const Projects = ({ projects }: Props) => {
                 ))}
             </div>
 
-            <div className='w-full absolute top-[30%] bg-[#66cd00]/10 left-0 h-[500px] -skew-y-12' />
+            {/* <div className='w-full absolute top-[30%] bg-[#66cd00]/10 left-0 h-[500px] -skew-y-12' /> */}
         </motion.div>
     )
 }

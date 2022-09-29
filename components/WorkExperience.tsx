@@ -22,7 +22,7 @@ const WorkExperience = ({ experiences }: Props) => {
                 Scroll Right to See More
             </h3>
 
-            <div className='w-full flex space-x-5 overflow-x-scroll md:p-10 snap-x snap-mandatory scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#66cd00]/80 md:mt-20'>
+            <div className='w-full flex space-x-5 overflow-x-scroll md:p-10 snap-x snap-mandatory scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#66cd00]/80 mt-16'>
                 {experiences?.map((experience) => (
                     <ExperienceCard
                         key={experience._id}

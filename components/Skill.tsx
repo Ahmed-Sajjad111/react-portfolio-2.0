@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Skill } from '../typings';
 import { urlFor } from '../sanity';
@@ -9,15 +9,48 @@ type Props = {
 }
 
 const Skill = ({ skill, directionLeft }: Props) => {
+    // const [width, setWidth] = useState(Number)
+
+    // useEffect(() => {
+    //     // width =  window.innerWidth
+    //     setWidth(window.innerWidth)
+    // }, [width]);
+
+    // function isBiggerThan() {
+    //     return width > 768
+    // }
+
     return (
         <div className='group relative flex cursor-pointer'>
+            {/* {
+                isBiggerThan()
+                    ? <motion.img
+                        initial={{
+                            x: directionLeft ? -200 : 200,
+                            opacity: 0,
+                        }}
+                        transition={{ duration: 1 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        src={urlFor(skill?.image).url()}
+                        className='rounded-full border border-gray-500 object-cover w-10 h-10 md:h-28 md:w-28 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out'
+                    />
+                    :
+                    <motion.img
+                        src={urlFor(skill?.image).url()}
+                        className='rounded-full border border-gray-500 object-cover w-10 h-10 md:h-28 md:w-28 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out'
+                    />
+            } */}
             <motion.img
                 initial={{
-                    x: directionLeft ? -200 : 200,
+                    y: directionLeft ? -200 : 200,
                     opacity: 0,
                 }}
                 transition={{ duration: 1 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                whileInView={{ 
+                    opacity: 1, 
+                    y: 0 
+                }}
                 viewport={{ once: true }}
                 src={urlFor(skill?.image).url()}
                 className='rounded-full border border-gray-500 object-cover w-10 h-10 md:h-28 md:w-28 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out'

@@ -18,39 +18,39 @@ const ContactMe = (props: Props) => {
     }
 
     return (
-        <div className='h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center'>
-            <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
+        <div className='md:h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center'>
+            <h3 className='md:absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl mt-20 md:mt-0'>
                 Contact
             </h3>
 
-            <div className='flex flex-col space-y-10'>
-                <h4 className='text-4xl font-semibold text-center underline decoration-[#66cd00]/50'>
+            <div className='flex flex-col space-y-10 mt-10 md:mt-0'>
+                <h4 className='text-3xl md:text-4xl font-semibold text-center underline decoration-[#66cd00]/50'>
                     Lets Talk.
                 </h4>
 
                 <div className='space-y-10'>
-                    <div className='flex items-center space-x-5 justify-center'>
+                    <div className='flex flex-col md:flex-row items-center md:space-x-5 justify-center'>
                         <PhoneIcon
                             className='text-[#66cd00] h-7 w-7 animate-pulse'
                         />
-                        <p className='text-2xl'>+1234567890</p>
+                        <p className='text-xl md:text-2xl mt-3 md:mt-0'>+1234567890</p>
                     </div>
-                    <div className='flex items-center space-x-5 justify-center'>
+                    <div className='flex flex-col md:flex-row items-center md:space-x-5 justify-center'>
                         <EnvelopeIcon
                             className='text-[#66cd00] h-7 w-7 animate-pulse'
                         />
-                        <p className='text-2xl'>uasajjad11198@outlook.com</p>
+                        <p className='text-xl md:text-2xl mt-3 md:mt-0'>uasajjad11198@outlook.com</p>
                     </div>
-                    <div className='flex items-center space-x-5 justify-center'>
+                    <div className='flex flex-col md:flex-row items-center md:space-x-5 justify-center'>
                         <MapPinIcon
                             className='text-[#66cd00] h-7 w-7 animate-pulse'
                         />
-                        <p className='text-2xl'>Union, New Jersey, United States</p>
+                        <p className='text-xl md:text-2xl mt-3 md:mt-0'>Union, New Jersey, United States</p>
                     </div>
                 </div>
 
                 <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col space-y-2 w-fit mx-auto'>
-                    <div className='flex space-x-2'>
+                    <div className='flex flex-col space-y-2 md:space-y-0 md:space-x-2 md:flex-row'>
                         <input
                             {...register('name')}
                             placeholder='Name'
